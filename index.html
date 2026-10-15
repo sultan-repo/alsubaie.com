@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>السبيعي · Alsubaie</title>
+<meta name="description" content="alsubaie.com">
+<meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14110F" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238C2F23'/%3E%3Cpath d='M14 46 L24 28 L34 46Z M30 46 L40 28 L50 46Z' fill='%23F7F3EC'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Reem+Kufi:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#F7F3EC;--ink:#1E1A17;--muted:#5E554D;--line:#E2D9CC;--card:#FFFDF9;--chip:#EFE7DB;--accent:#8C2F23;--on-accent:#FFFFFF;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14110F;--ink:#F0E8DD;--muted:#A79C90;--line:#2E2723;--card:#1C1815;--chip:#2A231F;--accent:#E08A6E;--on-accent:#14110F;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14110F;--ink:#F0E8DD;--muted:#A79C90;--line:#2E2723;--card:#1C1815;--chip:#2A231F;--accent:#E08A6E;--on-accent:#14110F;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  min-height:100vh;background:var(--bg);color:var(--ink);
+  font-family:'IBM Plex Sans Arabic','IBM Plex Sans',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+html[lang="en"] body{font-family:'IBM Plex Sans','IBM Plex Sans Arabic',system-ui,sans-serif}
+a{color:inherit}
+a:hover{opacity:.85}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.latin{font-family:'IBM Plex Sans',sans-serif}
+.sadu{display:block;width:100%;height:20px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 0}
+.brand{font-size:15px;font-weight:600;letter-spacing:.02em}
+.lang{display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px}
+.lang button{min-width:56px;min-height:40px;border:0;border-radius:999px;cursor:pointer;font-size:14px;font-weight:500;background:transparent;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.lang .ar{font-family:'IBM Plex Sans Arabic',sans-serif;font-size:15px}
+.hero{padding:72px 0 56px;text-align:center}
+.hero h1{margin:0;font-family:'Reem Kufi','IBM Plex Sans Arabic',sans-serif;font-size:clamp(64px,12vw,128px);line-height:1.1;font-weight:700}
+.hero .en-name{margin:8px 0 0;font-size:clamp(18px,2.4vw,24px);font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.services{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;border:1px solid var(--line);text-decoration:none;font-size:15px;font-weight:500}
+.btn.primary{padding:0 28px;background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-size:16px;font-weight:600}
+.spaces{padding:96px 0 72px}
+.spaces-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;margin-bottom:28px}
+.spaces-head h2{margin:0;font-size:26px;font-weight:600}
+.spaces-head p{margin:0;font-size:15px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.card{display:flex;flex-direction:column;gap:10px;min-height:156px;padding:24px;background:var(--card);border:1px solid var(--line);border-radius:16px;text-decoration:none}
+.card.soon{background:transparent;border-style:dashed}
+.card .host{align-self:flex-start;font-size:13px;font-weight:500;color:var(--accent)}
+.card.soon .host,.card.soon .name{color:var(--muted)}
+.card .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.card .tag{padding:3px 10px;border-radius:999px;font-size:12px;font-weight:500;background:var(--chip);color:var(--muted)}
+.card .name{font-size:20px;font-weight:600}
+.card .desc{font-size:15px;line-height:1.6;color:var(--muted)}
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:28px 0 40px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<svg class="sadu" aria-hidden="true">
+  <defs>
+    <pattern id="sadu" width="40" height="20" patternUnits="userSpaceOnUse">
+      <rect width="40" height="20" style="fill:var(--accent)"/>
+      <path d="M0 20 L10 6 L20 20 Z" style="fill:var(--ink)"/>
+      <path d="M20 20 L30 6 L40 20 Z" style="fill:var(--bg)"/>
+      <rect width="40" height="3" style="fill:var(--ink)"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="20" fill="url(#sadu)"/>
+</svg>
+
+<div class="wrap">
+  <header>
+    <span class="brand latin" dir="ltr">alsubaie.com</span>
+    <div class="lang" role="group" data-ar-label="اللغة" data-en-label="Language" aria-label="اللغة">
+      <button type="button" class="ar" data-set="ar" aria-pressed="true">عربي</button>
+      <button type="button" class="latin" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>السبيعي</h1>
+      <p class="en-name latin" dir="ltr">Alsubaie</p>
+    </section>
+
+    <nav class="services" data-ar-label="الخدمات" data-en-label="Services" aria-label="الخدمات">
+      <a class="btn primary" href="https://mail.google.com/a/alsubaie.com">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <span data-ar="الدخول إلى البريد" data-en="Sign in to email">الدخول إلى البريد</span>
+      </a>
+      <a class="btn" href="https://calendar.google.com/a/alsubaie.com" data-ar="التقويم" data-en="Calendar">التقويم</a>
+      <a class="btn" href="https://drive.google.com/a/alsubaie.com">Drive</a>
+    </nav>
+
+    <section class="spaces" aria-labelledby="spaces-h">
+      <div class="spaces-head">
+        <h2 id="spaces-h" data-ar="المساحات" data-en="Spaces">المساحات</h2>
+        <p data-ar="مواقع ومشاريع على نطاقات فرعية" data-en="Sites and projects on subdomains">مواقع ومشاريع على نطاقات فرعية</p>
+      </div>
+      <div class="grid">
+        <a class="card" href="https://sultan.alsubaie.com">
+          <span class="host latin" dir="ltr">sultan.alsubaie.com</span>
+          <span class="name" data-ar="سلطان" data-en="Sultan">سلطان</span>
+          <span class="desc" data-ar="الملف الشخصي والسيرة الذاتية وLinkedIn." data-en="Personal profile, CV and LinkedIn.">الملف الشخصي والسيرة الذاتية وLinkedIn.</span>
+        </a>
+        <div class="card soon">
+          <div class="top">
+            <span class="host latin" dir="ltr">family.alsubaie.com</span>
+            <span class="tag" data-ar="قريباً" data-en="Coming soon">قريباً</span>
+          </div>
+          <span class="name" data-ar="شجرة العائلة" data-en="Family tree">شجرة العائلة</span>
+          <span class="desc" data-ar="سجل الأنساب وفروع العائلة، بدخول خاص للأفراد." data-en="Lineage and branches of the family, members-only.">سجل الأنساب وفروع العائلة، بدخول خاص للأفراد.</span>
+        </div>
+        <div class="card soon">
+          <div class="top">
+            <span class="host latin" dir="ltr">projects.alsubaie.com</span>
+            <span class="tag" data-ar="قريباً" data-en="Coming soon">قريباً</span>
+          </div>
+          <span class="name" data-ar="المشاريع" data-en="Projects">المشاريع</span>
+          <span class="desc" data-ar="مشاريع شخصية وتجارب." data-en="Personal projects and experiments.">مشاريع شخصية وتجارب.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span data-ar="© ٢٠٢٦ alsubaie.com" data-en="© 2026 alsubaie.com">© ٢٠٢٦ alsubaie.com</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var root = document.documentElement;
+  function apply(lang){
+    root.lang = lang;
+    root.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.querySelectorAll('[data-ar]').forEach(function(el){
+      el.textContent = el.getAttribute('data-' + lang);
+    });
+    document.querySelectorAll('[data-ar-label]').forEach(function(el){
+      el.setAttribute('aria-label', el.getAttribute('data-' + lang + '-label'));
+    });
+    document.querySelectorAll('.lang button').forEach(function(b){
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-set') === lang));
+    });
+  }
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  if (saved === 'en') apply('en');
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click', function(){
+      var lang = b.getAttribute('data-set');
+      apply(lang);
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+    });
+  });
+})();
+</script>
+</body>
+</html>
