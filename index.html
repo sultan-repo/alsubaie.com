@@ -4,7 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>السبيعي · Alsubaie</title>
-<meta name="description" content="alsubaie.com">
+<meta name="description" content="السبيعي · Alsubaie — family domain for email, calendar and files. For family members only.">
+<link rel="canonical" href="https://alsubaie.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="السبيعي · Alsubaie">
+<meta property="og:description" content="Family domain for email, calendar and files. For family members only.">
+<meta property="og:url" content="https://alsubaie.com/">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:locale:alternate" content="en_US">
 <meta name="theme-color" content="#F7F3EC">
 <meta name="color-scheme" content="light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238C2F23'/%3E%3Cpath d='M14 46 L24 28 L34 46Z M30 46 L40 28 L50 46Z' fill='%23F7F3EC'/%3E%3C/svg%3E">
@@ -32,12 +39,13 @@ a:hover{opacity:.85}
 header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 0}
 .brand{font-size:15px;font-weight:600;letter-spacing:.02em}
 .lang{display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px}
-.lang button{min-width:56px;min-height:40px;border:0;border-radius:999px;cursor:pointer;font-size:14px;font-weight:500;background:transparent;color:var(--muted)}
+.lang button{min-width:56px;min-height:44px;border:0;border-radius:999px;cursor:pointer;font-size:14px;font-weight:500;background:transparent;color:var(--muted)}
 .lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 .lang .ar{font-family:'IBM Plex Sans Arabic',sans-serif;font-size:15px}
 .hero{padding:72px 0 56px;text-align:center}
 .hero h1{margin:0;font-family:'Reem Kufi','IBM Plex Sans Arabic',sans-serif;font-size:clamp(64px,12vw,128px);line-height:1.1;font-weight:700}
 .hero .en-name{margin:8px 0 0;font-size:clamp(18px,2.4vw,24px);font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.members{margin:16px 0 32px;text-align:center;font-size:13px;color:var(--muted)}
 .services{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;border:1px solid var(--line);text-decoration:none;font-size:15px;font-weight:500}
 .btn.primary{padding:0 28px;background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-size:16px;font-weight:600}
@@ -91,8 +99,9 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:cen
         <span data-ar="الدخول إلى البريد" data-en="Sign in to email">الدخول إلى البريد</span>
       </a>
       <a class="btn" href="https://calendar.google.com/a/alsubaie.com" data-ar="التقويم" data-en="Calendar">التقويم</a>
-      <a class="btn" href="https://drive.google.com/a/alsubaie.com">Drive</a>
+      <a class="btn" href="https://drive.google.com/a/alsubaie.com" data-ar="درايف" data-en="Drive">درايف</a>
     </nav>
+    <p class="members" data-ar="لأفراد العائلة فقط" data-en="For family members only">لأفراد العائلة فقط</p>
 
     <section class="spaces" aria-labelledby="spaces-h" hidden>
       <div class="spaces-head">
